@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleksi Calon Istri Ammar</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="js2.css">
+</head>
+<body>
+    <ul>
+        <li><a href="js2_soal1.html">Login</a></li>
+        <li><a href="js2_soal2.html">Kurs</a></li>
+        <li><a href="js2_soal3.html">Mini Chat</a></li>
+        <li><a href="js2_soal4.html">Image Picker</a></li>
+        <li><a href="js2_soal5.html">Tiket</a></li>
+      </ul>
+    <div class="container">
+        <h1><b>LOGIN AKUN PENDAFTARAN</b></h1>
+       
+            <input id='username' type='text' placeholder='Username'/><br/>
+            <input id='password' type='password' placeholder='Password'/><br/>
+            <button class="btn btn-danger" action='submit' onclick='login()'>Login</button>
+            <p id="akses"></p>
+    </div>
+
+    <!-- java script -->
+    <script>
+        function login(){
+            var data1 = document.getElementById('username').value + document.getElementById('password').value;
+            var data2 = ('faizkayyis2311') + ('20212022');
+            if (data1 == data2) {
+            var logakses = document.getElementById('akses').innerHTML = 'Login Berhasil!';
+            }
+            else {
+            var logakses = document.getElementById('akses').innerHTML = 'Login Gagal!';
+            }
+            alert(logakses)
+        }
+    </script>
+</body>
+</html>
+
+<!-- PUNYA AMMAR AYYASY -->

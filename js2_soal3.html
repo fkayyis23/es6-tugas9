@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="js2.css">
+    <title>Pesan Elektronik</title>
+    
+    
+</head>
+<body>
+    <ul>
+        <li><a href="js2_soal1.html">Login</a></li>
+        <li><a href="js2_soal2.html">Kurs</a></li>
+        <li><a href="js2_soal3.html">Mini Chat</a></li>
+        <li><a href="js2_soal4.html">Image Picker</a></li>
+        <li><a href="js2_soal5.html">Tiket</a></li>
+      </ul>
+    <div class="container">
+        <h1><b>Pesan Elektronik</b></h1>
+        <fieldset class="result-chat"><small>*Hasil Chat Anda</small></fieldset><br>
+        <input type="text" placeholder="Masukkan Pesan Disini..." class="input-chat" size="39"><br>
+        <button class="btnChat btn btn-danger">Send</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        let resultChat = document.querySelector(".result-chat");
+        const inputChat = document.querySelector(".input-chat");
+        const btnchatt = document.querySelector(".btnChat");
+        
+        btnchatt.addEventListener("click", function() {
+            resultChat.innerHTML = resultChat.innerHTML + "<br>" + "You :" + inputChat.value;
+            inputChat.value = "";
+        })
+    </script>
+</body>
+</html>
+
+
+
+<!-- PUNYA AMMAR AYYASY -->

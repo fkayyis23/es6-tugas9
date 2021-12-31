@@ -1,0 +1,95 @@
+*{
+    margin-top: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    background-color:black;
+    border-radius: 1em;
+    width: 400px;
+    align-items: center;
+}
+
+.result-chat {
+    overflow: auto;
+    width: 90%;
+    height: 200px;
+    background: #f1f1f1;
+    color: black;
+    border:1px solid #ddd;
+    border-radius: 7px;
+    font-family: arial;
+}
+
+h1{ 
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+body{
+    background:aquamarine;
+    font-family:'Arial';
+}
+
+img{
+    width: 50%;
+    border: solid 1px green;
+    border-radius: 1em;
+}
+
+body input{
+    padding:10px;
+    border-radius:5px;
+    width: 80%;
+    border:1px solid #ddd;
+}
+body input:focus{
+    border-color: yellow;
+    outline:none;
+}
+
+body select:focus{
+    border-color: green;
+    outline: none;
+}
+
+body button:hover{
+    opacity: 0.8;
+}
+
+select{
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+fieldset{
+    width: 80%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    background-color: white;
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li, a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}

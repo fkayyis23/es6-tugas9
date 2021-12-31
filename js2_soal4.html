@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js2.css">
+    <!-- JavaSript -->
+    <script>
+        function pilih(){
+            let list_faiz = document.getElementById("Faiz");
+            let idx = list_faiz.selectedIndex;
+            let area_gambar=document.getElementById("gambar");
+            area_gambar.src= list_faiz[idx].value+".jpg";
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li><a href="js2_soal1.html">Login</a></li>
+        <li><a href="js2_soal2.html">Kurs</a></li>
+        <li><a href="js2_soal3.html">Mini Chat</a></li>
+        <li><a href="js2_soal4.html">Image Picker</a></li>
+        <li><a href="js2_soal5.html">Tiket</a></li>
+      </ul>
+      <div class="container">
+           <h1>FOTO SAYA</h1>
+            <select id="Faiz" onchange="pilih()">
+                <option value="foto1">Jelek</option>
+                <option value="foto3">Agak ganteng</option>
+                <option value="foto4">ganteng</option>
+                <option value="foto6">Sok ganteng</option>    
+            </select>
+        <br/>
+        
+        <img src="foto1.jpg" alt="foto1" id="gambar"/>
+      </div>
+</body>
+</html>
+
+
+
+<!-- PUNYA AMMAR AYYASY -->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+    <link rel="stylesheet" href="js2.css">    
+</head>
+<body>
+    <ul>
+        <li><a href="js2_soal1.html">Login</a></li>
+        <li><a href="js2_soal2.html">Kurs</a></li>
+        <li><a href="js2_soal3.html">Mini Chat</a></li>
+        <li><a href="js2_soal4.html">Image Picker</a></li>
+        <li><a href="js2_soal5.html">Tiket</a></li>
+      </ul>
+    <div class="container">
+        <h1>Konversi Mata Kurs Rupiah</h1>
+        <input type="number" id="jumlahUang" placeholder="Masukkan Nilai">
+
+        <br><label style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;" for="">Pilih Mata Uang</label>
+        <select id="bank" onclick= konversi()>
+            <option value="US_Dollar" id="US_Dollar">US Dollar</option>
+            <option value="US_Singapore" id="US Singapore">US Singapore</option>
+            <option value="Ringgit" id="Ringgit">Ringgit Malaysia</option>
+            <option value="Yen" id="Yen">Yen jepang</option>
+            <option value="Euro" id="Euro">Euro Rusia</option>
+            <option value="Riyal" id="Riyal">Riyal Arab</option>
+        </select>
+
+        <br><label style="font-size: 13px; font-family: Arial, Helvetica, sans-serif;" for="">Dalam Rupiah</label>
+        <fieldset><span id="hasilHitung">Rp.</span></fieldset>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function konversi(){
+            const dollarAmerika = 9915;
+            const dollarSingapore = 13472;  
+            const ringgitMalay = 874;
+            const yenJapan = 120;
+            const euroRusia = 15888;
+            const riyalArab = 3592;
+
+            let jumlahUang = document.getElementById('jumlahUang');
+            let bank = document.getElementById('bank');
+            let hasilHitung = document.getElementById('hasilHitung');
+
+          if (bank.value ==='US_Dollar') {
+            console.log(jumlahUang.value * 9915)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 9915
+            }
+          else if (bank.value === 'US_Singapore') {
+            console.log(jumlahUang.value * 13472)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 13472
+          }
+          else if (bank.value === 'Ringgit') {
+            console.log(jumlahUang.value * 874)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 874
+          }
+          else if (bank.value === 'Yen') {
+            console.log(jumlahUang.value * 120)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 120
+          }
+          else if (bank.value === 'Euro') {
+            console.log(jumlahUang.value * 15888)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 15888
+          }
+          else if (bank.value === 'Riyal') {
+            console.log(jumlahUang.value * 3592)
+            hasilHitung.innerHTML = 'Rp. ' + jumlahUang.value * 3592
+          }
+        }
+    </script>
+</body>
+</html>
+
+<!-- PUNYA AMMAR AYYASY -->
